@@ -33,11 +33,11 @@ const skillCategories = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-20 bg-white dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="skills" className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50 dark:from-gray-900 dark:via-purple-900/10 dark:to-indigo-900/10 geometric-bg">
+      <div className="max-w-6xl mx-auto px-6 perspective-1000">
         <AnimatedSection animationType="fade-in-up">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 neon-glow">
               기술 스택 & Skills
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
@@ -55,7 +55,7 @@ export default function SkillsSection() {
               animationType="fade-in-up"
               delay={(categoryIndex * 100).toString() as "100" | "200" | "300" | "400" | "500"}
             >
-              <div className={`bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-lg hover-glow hover-border ${hoverDirection}`}>
+              <div className={`glass-morphism rounded-xl p-6 premium-shadow hover-glow hover-border card-3d float ${hoverDirection}`}>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   {category.title}
                 </h3>
@@ -90,7 +90,7 @@ export default function SkillsSection() {
         {/* 추가 기술 스택을 위한 공간 */}
         <AnimatedSection animationType="fade-in-up" delay="400">
           <div className="mt-12 text-center">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg border-2 border-dashed border-gray-300 dark:border-gray-600 hover-card-center hover-glow">
+            <div className="glass-morphism rounded-xl p-8 premium-shadow border-2 border-dashed border-indigo-300/50 dark:border-indigo-600/50 hover-card-center hover-glow card-3d">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 여기에 추가 기술들을 넣어주세요
               </h3>

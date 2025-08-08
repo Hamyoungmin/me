@@ -27,7 +27,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardWrapperPr
   const hoverDirection = index % 2 === 0 ? 'hover-card-left' : 'hover-card-right';
   
   return (
-    <div className={`bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover-glow hover-border ${hoverDirection}`}>
+    <div className={`glass-morphism rounded-xl overflow-hidden premium-shadow hover-glow hover-border card-3d tilt-3d ${hoverDirection}`}>
       {/* 프로젝트 이미지 */}
       <div className="relative h-48 bg-gray-200 dark:bg-gray-700">
         <div className="absolute inset-0 flex items-center justify-center">

@@ -34,14 +34,14 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg' 
+        ? 'glass-morphism premium-shadow backdrop-blur-md' 
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* 로고 */}
           <div 
-            className="text-2xl font-bold text-gray-900 dark:text-white cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            className="text-2xl font-bold text-gray-900 dark:text-white cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 hover:scale-105 neon-glow"
             onClick={() => scrollToSection('home')}
           >
             자바침
@@ -53,7 +53,7 @@ export default function Navbar() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors duration-300"
+                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-300 hover:scale-105 px-3 py-2 rounded-lg hover:bg-white/10"
               >
                 {item.label}
               </button>
@@ -87,7 +87,7 @@ export default function Navbar() {
 
         {/* 모바일 메뉴 */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg rounded-lg mt-2 py-4">
+          <div className="md:hidden glass-morphism premium-shadow rounded-lg mt-2 py-4">
             {navItems.map((item) => (
               <button
                 key={item.id}

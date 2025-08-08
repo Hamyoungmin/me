@@ -35,11 +35,11 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="projects" className="py-20 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 dark:from-gray-900 dark:via-indigo-900/10 dark:to-gray-800 geometric-bg">
+      <div className="max-w-7xl mx-auto px-6 perspective-1000">
         <AnimatedSection animationType="fade-in-up">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 neon-glow">
               프로젝트
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
