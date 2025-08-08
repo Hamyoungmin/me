@@ -40,13 +40,13 @@ export default function HeroSection() {
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#projects" 
-              className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg"
+              className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg hover:scale-105 hover:shadow-lg transform"
             >
               프로젝트 보기
             </a>
             <a 
               href="#contact" 
-              className="inline-block border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-gray-900"
+              className="inline-block border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-gray-900 hover:scale-105 hover:shadow-lg transform"
             >
               연락하기
             </a>

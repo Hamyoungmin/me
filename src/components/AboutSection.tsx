@@ -18,7 +18,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* 왼쪽: 프로필 정보 */}
           <AnimatedSection animationType="fade-in-left" delay="200">
-            <div className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg hover-card-left hover-glow hover-border">
               <div className="mb-6">
                 <div className="w-32 h-32 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                   <span className="text-white text-4xl font-bold">자</span>
@@ -55,7 +55,7 @@ export default function AboutSection() {
           {/* 오른쪽: 기술 설명 */}
           <div className="space-y-6">
             <AnimatedSection animationType="fade-in-right" delay="300">
-              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg">
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover-card-right hover-glow hover-border">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   기술 전문성
                 </h3>
@@ -73,7 +73,7 @@ export default function AboutSection() {
             </AnimatedSection>
 
             <AnimatedSection animationType="fade-in-right" delay="400">
-              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg">
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover-card-right hover-glow hover-border">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   개발 철학
                 </h3>

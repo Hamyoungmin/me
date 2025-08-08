@@ -26,7 +26,7 @@ export default function ContactSection() {
             
             {/* 이메일 */}
             <AnimatedSection animationType="fade-in-left" delay="300">
-              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover-card-left hover-glow hover-border">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-xl">E</span>
@@ -46,7 +46,7 @@ export default function ContactSection() {
 
             {/* GitHub */}
             <AnimatedSection animationType="fade-in-left" delay="400">
-              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover-card-left hover-glow hover-border">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
                     <span className="text-white text-xl">G</span>
@@ -68,7 +68,7 @@ export default function ContactSection() {
 
             {/* 기타 링크들 */}
             <AnimatedSection animationType="fade-in-left" delay="500">
-              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover-card-left hover-glow hover-border">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-xl">L</span>
@@ -86,7 +86,7 @@ export default function ContactSection() {
 
           {/* 간단한 연락 폼 */}
           <AnimatedSection animationType="fade-in-right" delay="200">
-            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover-card-right hover-glow hover-border">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 빠른 연락
               </h3>
@@ -127,7 +127,7 @@ export default function ContactSection() {
                 
                 <button
                   type="submit"
-                  className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                  className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg transform"
                 >
                   메시지 보내기
                 </button>

@@ -19,9 +19,15 @@ interface ProjectCardProps {
   project: Project;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+interface ProjectCardWrapperProps extends ProjectCardProps {
+  index?: number;
+}
+
+export default function ProjectCard({ project, index = 0 }: ProjectCardWrapperProps) {
+  const hoverDirection = index % 2 === 0 ? 'hover-card-left' : 'hover-card-right';
+  
   return (
-    <div className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className={`bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover-glow hover-border ${hoverDirection}`}>
       {/* 프로젝트 이미지 */}
       <div className="relative h-48 bg-gray-200 dark:bg-gray-700">
         <div className="absolute inset-0 flex items-center justify-center">
@@ -90,7 +96,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               href={project.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center bg-gray-900 dark:bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors duration-300"
+              className="flex-1 text-center bg-gray-900 dark:bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-all duration-300 hover:scale-105 transform"
             >
               GitHub
             </a>
@@ -100,7 +106,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               href={project.links.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300"
+              className="flex-1 text-center bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-all duration-300 hover:scale-105 transform"
             >
               데모 보기
             </a>

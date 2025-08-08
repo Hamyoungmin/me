@@ -55,7 +55,7 @@ export default function ProjectsSection() {
               animationType={index % 2 === 0 ? "fade-in-left" : "fade-in-right"}
               delay={index < 2 ? (index * 200).toString() as "100" | "200" | "300" | "400" | "500" : undefined}
             >
-              <ProjectCard project={project} />
+              <ProjectCard project={project} index={index} />
             </AnimatedSection>
           ))}
         </div>

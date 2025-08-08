@@ -47,13 +47,15 @@ export default function SkillsSection() {
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
+          {skillCategories.map((category, categoryIndex) => {
+            const hoverDirection = categoryIndex % 2 === 0 ? 'hover-card-left' : 'hover-card-right';
+            return (
             <AnimatedSection 
               key={categoryIndex} 
               animationType="fade-in-up"
               delay={(categoryIndex * 100).toString() as "100" | "200" | "300" | "400" | "500"}
             >
-              <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-lg">
+              <div className={`bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-lg hover-glow hover-border ${hoverDirection}`}>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   {category.title}
                 </h3>
@@ -81,13 +83,14 @@ export default function SkillsSection() {
                 </div>
               </div>
             </AnimatedSection>
-          ))}
+            );
+          })}
         </div>
 
         {/* 추가 기술 스택을 위한 공간 */}
         <AnimatedSection animationType="fade-in-up" delay="400">
           <div className="mt-12 text-center">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg border-2 border-dashed border-gray-300 dark:border-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg border-2 border-dashed border-gray-300 dark:border-gray-600 hover-card-center hover-glow">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 여기에 추가 기술들을 넣어주세요
               </h3>
