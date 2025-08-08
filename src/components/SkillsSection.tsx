@@ -3,28 +3,28 @@ const skillCategories = [
   {
     title: "Frontend",
     skills: [
-      { name: "React", level: 90, icon: "⚛️" },
-      { name: "TypeScript", level: 85, icon: "📘" },
-      { name: "Next.js", level: 80, icon: "🔺" },
-      { name: "Tailwind CSS", level: 85, icon: "🎨" }
+      { name: "React", level: 90 },
+      { name: "TypeScript", level: 85 },
+      { name: "Next.js", level: 80 },
+      { name: "Tailwind CSS", level: 85 }
     ]
   },
   {
     title: "Backend",
     skills: [
-      { name: "Node.js", level: 85, icon: "🟢" },
-      { name: "Python", level: 80, icon: "🐍" },
-      { name: "Express", level: 85, icon: "🚀" },
-      { name: "MongoDB", level: 75, icon: "🍃" }
+      { name: "Node.js", level: 85 },
+      { name: "Python", level: 80 },
+      { name: "Express", level: 85 },
+      { name: "MongoDB", level: 75 }
     ]
   },
   {
     title: "Tools & Others",
     skills: [
-      { name: "Git", level: 90, icon: "📚" },
-      { name: "Docker", level: 70, icon: "🐳" },
-      { name: "AWS", level: 65, icon: "☁️" },
-      { name: "Figma", level: 75, icon: "🎯" }
+      { name: "Git", level: 90 },
+      { name: "Docker", level: 70 },
+      { name: "AWS", level: 65 },
+      { name: "Figma", level: 75 }
     ]
   }
 ];
@@ -53,12 +53,9 @@ export default function SkillsSection() {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <span className="text-xl">{skill.icon}</span>
-                        <span className="font-medium text-gray-900 dark:text-white">
-                          {skill.name}
-                        </span>
-                      </div>
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        {skill.name}
+                      </span>
                       <span className="text-sm text-gray-600 dark:text-gray-400">
                         {skill.level}%
                       </span>
@@ -81,7 +78,7 @@ export default function SkillsSection() {
         <div className="mt-12 text-center">
           <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg border-2 border-dashed border-gray-300 dark:border-gray-600">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-              📝 여기에 추가 기술들을 넣어주세요
+              여기에 추가 기술들을 넣어주세요
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
               위의 skillCategories 배열에 새로운 기술들을 추가하거나<br />

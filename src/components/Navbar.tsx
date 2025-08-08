@@ -44,7 +44,7 @@ export default function Navbar() {
             className="text-2xl font-bold text-gray-900 dark:text-white cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
             onClick={() => scrollToSection('home')}
           >
-            자바침 💻
+            자바침
           </div>
 
           {/* 데스크톱 메뉴 */}

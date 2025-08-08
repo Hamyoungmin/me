@@ -15,14 +15,14 @@ export default function ContactSection() {
           {/* 연락 방법들 */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              📞 연락 방법
+              연락 방법
             </h3>
             
             {/* 이메일 */}
             <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">📧</span>
+                  <span className="text-white text-xl">E</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 dark:text-white">이메일</h4>
@@ -40,7 +40,7 @@ export default function ContactSection() {
             <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">⚡</span>
+                  <span className="text-white text-xl">G</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 dark:text-white">GitHub</h4>
@@ -60,7 +60,7 @@ export default function ContactSection() {
             <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">🔗</span>
+                  <span className="text-white text-xl">L</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 dark:text-white">기타 링크</h4>
@@ -75,7 +75,7 @@ export default function ContactSection() {
           {/* 간단한 연락 폼 */}
           <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              💬 빠른 연락
+              빠른 연락
             </h3>
             
             <form className="space-y-4">
@@ -122,7 +122,7 @@ export default function ContactSection() {
             
             <div className="mt-4 text-center">
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                보통 24시간 이내에 답변드립니다 ✨
+                보통 24시간 이내에 답변드립니다
               </p>
             </div>
           </div>

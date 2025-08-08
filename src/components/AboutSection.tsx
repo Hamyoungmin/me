@@ -52,7 +52,7 @@ export default function AboutSection() {
           <div className="space-y-6">
             <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                💻 기술 전문성
+                기술 전문성
               </h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                 <span className="font-semibold text-indigo-600 dark:text-indigo-400">
@@ -68,7 +68,7 @@ export default function AboutSection() {
 
             <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                🎯 개발 철학
+                개발 철학
               </h3>
               <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                 <li className="flex items-start gap-3">
