@@ -1,4 +1,5 @@
 import AnimatedSection from './AnimatedSection';
+import Image from 'next/image';
 
 export default function AboutSection() {
   return (
@@ -20,8 +21,14 @@ export default function AboutSection() {
           <AnimatedSection animationType="fade-in-left" delay="200">
             <div className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg hover-card-left hover-glow hover-border">
               <div className="mb-6">
-                <div className="w-32 h-32 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-white text-4xl font-bold">자</span>
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-indigo-200 dark:border-indigo-800">
+                  <Image
+                    src="/증명사진.jpg"
+                    alt="자바침 프로필 사진"
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-2">
                   자바침
