@@ -25,8 +25,8 @@ export default function Navbar() {
 
   const navItems = [
     { id: 'home', label: '홈' },
-    { id: 'projects', label: '프로젝트' },
     { id: 'about', label: 'About' },
+    { id: 'projects', label: '프로젝트' },
     { id: 'skills', label: '기술 스택' },
     { id: 'contact', label: '연락처' },
   ];
