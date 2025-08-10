@@ -7,7 +7,7 @@ interface AnimatedSectionProps {
   children: ReactNode;
   className?: string;
   animationType?: 'fade-in-up' | 'fade-in-left' | 'fade-in-right' | 'fade-in';
-  delay?: '100' | '200' | '300' | '400' | '500';
+  delay?: '100' | '200' | '300' | '400' | '500' | '600' | '700';
   triggerOnce?: boolean;
 }
 
@@ -20,7 +20,7 @@ export default function AnimatedSection({
 }: AnimatedSectionProps) {
   const { targetRef, isIntersecting } = useIntersectionObserver({
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px',
+    rootMargin: '0px 0px -50px 0px',
     triggerOnce
   });
 
