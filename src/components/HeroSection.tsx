@@ -2,65 +2,55 @@ import AnimatedSection from './AnimatedSection';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gray-100/50 backdrop-blur-sm relative overflow-hidden">
-
-      
-      <div className="max-w-4xl mx-auto px-6 py-20 text-center relative z-10">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-6 lg:px-24 pt-40">
+      <div className="max-w-6xl mx-auto w-full">
         <AnimatedSection animationType="fade-in-up">
-          <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-black mb-6">
-              안녕하세요!
-            </h1>
-          </div>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-2" 
+              style={{ color: 'var(--white)' }}>
+            안녕하세요.<br />
+            저는 자바침입니다!
+          </h1>
+        </AnimatedSection>
+        
+        <AnimatedSection animationType="fade-in-up" delay="100">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8" 
+              style={{ color: 'var(--slate)' }}>
+            빠른 결과물, 확실한 만족
+          </h2>
         </AnimatedSection>
         
         <AnimatedSection animationType="fade-in-up" delay="200">
-          <div className="glass-morphism rounded-2xl p-8 mb-8">
-            <h2 className="text-3xl md:text-4xl font-semibold text-black mb-4">
-              바이브코딩으로 뭐든 다 만들어드리는 
-              <span className="block mt-2 text-4xl md:text-5xl font-bold text-black">
-                자바침입니다!
-              </span>
-            </h2>
-          </div>
-        </AnimatedSection>
-        
-        <AnimatedSection animationType="fade-in-up" delay="300">
-          <div className="glass-morphism rounded-xl p-6">
-            <div className="space-y-6 text-lg md:text-xl text-black max-w-3xl mx-auto">
-              <AnimatedSection animationType="fade-in-up" delay="100">
-                <p className="leading-relaxed">
-                  <span className="font-semibold text-black">원하는걸 다 만들어드릴 수 있으며</span>
-                </p>
-              </AnimatedSection>
-              <AnimatedSection animationType="fade-in-up" delay="200">
-                <p className="leading-relaxed">
-                  <span className="font-semibold text-black">원하는 날짜까지 맞춰드릴 수 있습니다!</span>
-                </p>
-              </AnimatedSection>
-              <AnimatedSection animationType="fade-in-up" delay="300">
-                <p className="leading-relaxed text-xl md:text-2xl font-medium">
-                  <span className="text-black">빠르고 정확하게</span> 만들어드리고 있으니 
-                  <span className="font-bold text-black"> 안심해주세요!</span>
-                </p>
-              </AnimatedSection>
-            </div>
+          <div className="max-w-2xl">
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: 'var(--slate)' }}>
+              저는 다양한 PC 웹·앱, 모바일 웹·앱,<br />
+              그리고 프로그램을 만드는 전문 개발자입니다.<br />
+              <span style={{ color: 'var(--cyan-mint)' }}>바이브코딩으로 안되는건 없습니다.</span><br />
+              <br />
+              소프트웨어나 IT 할 거 없이<br />
+              원하는 모든 다 만들어드릴 수 있으며, <span style={{ color: 'var(--lightest-slate)' }}>원하는 날짜까지 맞춰드립니다.</span><br />
+              <br />
+              빠르고 정확하게 만들어드리니 <span style={{ color: 'var(--cyan-mint)' }}>안심하셔도 됩니다.</span>
+            </p>
           </div>
         </AnimatedSection>
 
         <AnimatedSection animationType="fade-in-up" delay="400">
-          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4">
             <a 
               href="#projects" 
-              className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold py-4 px-8 rounded-lg text-lg"
+              className="inline-block border px-8 py-5 rounded font-mono transition-all duration-300 hover:-translate-y-1 text-center"
+              style={{ 
+                borderColor: 'var(--cyan-mint)', 
+                color: 'var(--cyan-mint)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'var(--cyan-mint-tint)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'transparent';
+              }}
             >
-              프로젝트 보기
-            </a>
-            <a 
-              href="#contact" 
-              className="inline-block glass-morphism text-black font-semibold py-4 px-8 rounded-lg text-lg border border-black/20"
-            >
-              연락하기
+              프로젝트 확인하기!
             </a>
           </div>
         </AnimatedSection>

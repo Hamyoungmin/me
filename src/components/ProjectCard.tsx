@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 interface Project {
   id: number;
   name: string;
@@ -23,8 +21,7 @@ interface ProjectCardWrapperProps extends ProjectCardProps {
   index?: number;
 }
 
-export default function ProjectCard({ project, index = 0 }: ProjectCardWrapperProps) {
-  const hoverDirection = index % 2 === 0 ? 'hover-card-left' : 'hover-card-right';
+export default function ProjectCard({ project }: ProjectCardWrapperProps) {
   
   return (
     <div className="bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl border border-white/20">

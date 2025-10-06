@@ -24,27 +24,30 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { id: 'home', label: '홈' },
-    { id: 'about', label: 'About' },
-    { id: 'projects', label: '프로젝트' },
-    { id: 'skills', label: '기술 스택' },
-    { id: 'contact', label: '연락처' },
+    { id: 'about', label: 'About', number: '01' },
+    { id: 'projects', label: 'Projects', number: '02' },
+    { id: 'skills', label: 'Skills', number: '03' },
+    { id: 'contact', label: 'Contact', number: '04' },
   ];
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/70 backdrop-blur-md border-b border-black/10' 
-        : 'bg-transparent'
-    }`}>
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        ? 'backdrop-blur-md shadow-lg' 
+        : ''
+    }`}
+    style={{ 
+      background: isScrolled ? 'var(--navy-shadow)' : 'transparent'
+    }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="flex items-center justify-between h-24">
           {/* 로고 */}
           <div 
-            className="text-2xl font-bold text-black cursor-pointer transition-all duration-300"
+            className="text-3xl font-bold cursor-pointer transition-all duration-300 font-mono"
             onClick={() => scrollToSection('home')}
+            style={{ color: 'var(--white)' }}
           >
-            자바침
+            <span className="text-4xl">J</span>
           </div>
 
           {/* 데스크톱 메뉴 */}
@@ -53,18 +56,39 @@ export default function Navbar() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-black/80 hover:text-black font-medium transition-all duration-300 px-3 py-2 rounded-lg hover:bg-black/10"
+                className="font-mono text-sm transition-all duration-300 hover:-translate-y-1"
+                style={{ color: 'var(--slate)' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--cyan-mint)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--slate)'}
               >
+                <span style={{ color: 'var(--cyan-mint)' }}>{item.number}. </span>
                 {item.label}
               </button>
             ))}
+            <a 
+              href="#contact" 
+              className="border px-5 py-3 rounded font-mono text-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              style={{ 
+                borderColor: 'var(--cyan-mint)', 
+                color: 'var(--cyan-mint)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'var(--cyan-mint-tint)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'transparent';
+              }}
+            >
+              Resume
+            </a>
           </div>
 
           {/* 모바일 메뉴 버튼 */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-black/80 hover:text-black focus:outline-none"
+              className="focus:outline-none transition-all duration-300"
+              style={{ color: 'var(--white)' }}
             >
               <svg
                 className="h-6 w-6"
@@ -87,13 +111,17 @@ export default function Navbar() {
 
         {/* 모바일 메뉴 */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white/80 backdrop-blur-md border border-black/10 rounded-lg mt-2 py-4">
+          <div className="md:hidden rounded-lg mt-2 py-4" style={{ background: 'var(--light-navy)' }}>
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-6 py-3 text-black/80 hover:text-black hover:bg-black/10 font-medium transition-colors duration-300"
+                className="block w-full text-left px-6 py-3 font-mono transition-colors duration-300"
+                style={{ color: 'var(--slate)' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--cyan-mint)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--slate)'}
               >
+                <span style={{ color: 'var(--cyan-mint)' }}>{item.number}. </span>
                 {item.label}
               </button>
             ))}
