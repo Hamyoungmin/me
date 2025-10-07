@@ -7,32 +7,69 @@ const faqs = [
   {
     id: 1,
     question: "프로젝트 기간은 얼마나 걸리나요?",
-    answer: "프로젝트의 규모와 복잡도에 따라 다르지만, 일반적으로 소규모 프로젝트는 2-4주, 중규모는 1-2개월, 대규모는 2-3개월 정도 소요됩니다. 정확한 일정은 상담 후 결정됩니다."
+    answer: (
+      <>
+        프로젝트의 규모와 복잡도에 따라 다르지만, 일반적으로{' '}
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}>소규모 프로젝트는 1-3주</span>,{' '}
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}>중소 규모는 1-2개월</span>,{' '}
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}>대규모는 3-5개월</span> 정도 소요됩니다. 정확한 일정은 상담 후 결정됩니다.
+      </>
+    )
   },
   {
     id: 2,
     question: "어떤 기술 스택을 사용하시나요?",
-    answer: "주로 React, Next.js, TypeScript, Tailwind CSS를 사용하며, 백엔드는 Node.js, Python을 활용합니다. 프로젝트 요구사항에 따라 최적의 기술 스택을 제안드립니다."
+    answer: (
+      <>
+        주로 사용하는 기술은 <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}>바이브코딩</span>이며, 
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}> React, Next.js, TypeScript, Tailwind CSS, Node.js, Python</span> 등을 활용합니다. 
+        프로젝트 요구사항에 따라 최적의 기술 스택을 제안드립니다.
+      </>
+    )
   },
   {
     id: 3,
     question: "비용은 어떻게 책정되나요?",
-    answer: "프로젝트의 범위, 기능, 복잡도에 따라 견적이 달라집니다. 초기 상담을 통해 요구사항을 파악한 후 합리적인 비용을 제안드립니다. 투명한 비용 산정을 원칙으로 합니다."
+    answer: (
+      <>
+        프로젝트의 범위, 기능, 복잡도에 따라 견적이 달라집니다. 
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}> 초기 상담</span>을 통해 요구사항을 파악한 후 
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}> 합리적인 비용</span>을 제안드립니다. 
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}> 합리적이고 정확한 비용 산정</span>을 원칙으로 합니다.
+      </>
+    )
   },
   {
     id: 4,
     question: "유지보수 서비스도 제공하나요?",
-    answer: "네, 프로젝트 완료 후에도 지속적인 유지보수 및 업데이트 서비스를 제공합니다. 버그 수정, 기능 개선, 성능 최적화 등 다양한 지원이 가능합니다."
+    answer: (
+      <>
+        네, 프로젝트 완료 후에도 <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}>지속적인 유지보수 및 업데이트 서비스</span>를 제공합니다.<br />
+        버그 수정, 기능 개선, 성능 최적화 등 다양한 지원이 가능합니다.
+      </>
+    )
   },
   {
     id: 5,
     question: "반응형 웹 디자인을 지원하나요?",
-    answer: "물론입니다! 모든 프로젝트는 기본적으로 반응형 웹 디자인을 적용하여 PC, 태블릿, 모바일 등 모든 디바이스에서 최적화된 경험을 제공합니다."
+    answer: (
+      <>
+        물론입니다! 모든 프로젝트는 기본적으로 <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}>반응형 웹 디자인</span>을 적용하여<br />
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}>PC, 태블릿, 모바일</span> 등 
+        모든 디바이스에서 최적화된 경험을 제공합니다.
+      </>
+    )
   },
   {
     id: 6,
     question: "협업은 어떻게 진행되나요?",
-    answer: "카카오톡, 이메일, 화상회의 등 편한 방법으로 소통합니다. 정기적인 진행상황 공유와 피드백을 통해 투명하게 프로젝트를 진행합니다."
+    answer: (
+      <>
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}>카카오톡, 이메일, 화상회의</span> 등 편한 방법으로 소통합니다.<br />
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}>정기적인 진행상황 공유</span>와 피드백을 통해 
+        <span style={{ color: 'var(--cyan-mint)', fontWeight: 'bold' }}> 정확하게</span> 프로젝트를 진행합니다.
+      </>
+    )
   }
 ];
 
@@ -134,8 +171,7 @@ export default function FAQSection() {
                     <div 
                       className="p-4 rounded-xl"
                       style={{
-                        background: 'rgba(77, 208, 225, 0.05)',
-                        borderLeft: '3px solid var(--cyan-mint)'
+                        background: 'rgba(77, 208, 225, 0.05)'
                       }}
                     >
                       <p className="text-base md:text-lg leading-relaxed" style={{ color: 'var(--slate)' }}>
