@@ -34,14 +34,30 @@ const skillCategories = [
 export default function SkillsSection() {
   return (
     <section id="skills" className="py-20 lg:py-32 relative px-6 lg:px-24">
-      <div className="max-w-6xl mx-auto">
+      {/* 배경 그라데이션 */}
+      <div className="absolute inset-0 opacity-20">
+        <div 
+          className="absolute bottom-1/4 left-1/3 w-[450px] h-[450px] rounded-full blur-3xl"
+          style={{
+            background: 'radial-gradient(circle, rgba(100, 255, 218, 0.3) 0%, transparent 70%)',
+          }}
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <AnimatedSection animationType="fade-in-up">
           <div className="flex items-center gap-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-mono whitespace-nowrap" 
-                style={{ color: 'var(--white)' }}>
+                style={{ 
+                  color: 'var(--white)',
+                  textShadow: '0 0 20px rgba(77, 208, 225, 0.3)'
+                }}>
               <span style={{ color: 'var(--cyan-mint)' }}>03.</span> Skills
             </h2>
-            <div className="h-[1px] w-full max-w-xs" style={{ background: 'var(--lightest-navy)' }}></div>
+            <div className="h-[2px] w-full max-w-xs rounded-full" 
+                 style={{ 
+                   background: 'linear-gradient(90deg, var(--cyan-mint), transparent)'
+                 }}></div>
           </div>
         </AnimatedSection>
 
@@ -52,26 +68,51 @@ export default function SkillsSection() {
               animationType="fade-in-up"
               delay={(categoryIndex * 100).toString() as "100" | "200" | "300" | "400" | "500"}
             >
-              <div className="rounded p-6 border transition-all duration-300 hover:-translate-y-2"
+              <div className="rounded-3xl p-8 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:scale-105 group"
                    style={{ 
-                     background: 'var(--light-navy)',
-                     borderColor: 'var(--lightest-navy)'
+                     background: 'rgba(17, 34, 64, 0.4)',
+                     border: '1px solid rgba(77, 208, 225, 0.1)',
+                     boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)'
+                   }}
+                   onMouseEnter={(e) => {
+                     e.currentTarget.style.borderColor = 'rgba(77, 208, 225, 0.3)';
+                     e.currentTarget.style.boxShadow = '0 0 40px rgba(77, 208, 225, 0.2)';
+                   }}
+                   onMouseLeave={(e) => {
+                     e.currentTarget.style.borderColor = 'rgba(77, 208, 225, 0.1)';
+                     e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
                    }}>
                 <h3 className="text-xl font-bold mb-6 font-mono" 
-                    style={{ color: 'var(--cyan-mint)' }}>
+                    style={{ 
+                      color: 'var(--cyan-mint)',
+                      textShadow: '0 0 10px rgba(77, 208, 225, 0.3)'
+                    }}>
                   {category.title}
                 </h3>
                 
-                <ul className="space-y-3">
+                <ul className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
-                    <li key={skillIndex} className="flex items-center justify-between font-mono text-sm">
-                      <span style={{ color: 'var(--slate)' }}>
-                        <span style={{ color: 'var(--cyan-mint)' }}>▹ </span>
-                        {skill.name}
-                      </span>
-                      <span className="text-xs" style={{ color: 'var(--slate)' }}>
-                        {skill.level}%
-                      </span>
+                    <li key={skillIndex}>
+                      <div className="flex items-center justify-between font-mono text-sm mb-2">
+                        <span style={{ color: 'var(--slate)' }}>
+                          <span style={{ color: 'var(--cyan-mint)' }}>▹ </span>
+                          {skill.name}
+                        </span>
+                        <span className="text-xs" style={{ color: 'var(--light-slate)' }}>
+                          {skill.level}%
+                        </span>
+                      </div>
+                      <div className="h-1.5 rounded-full overflow-hidden" 
+                           style={{ background: 'rgba(77, 208, 225, 0.1)' }}>
+                        <div 
+                          className="h-full rounded-full transition-all duration-1000"
+                          style={{ 
+                            width: `${skill.level}%`,
+                            background: 'linear-gradient(90deg, var(--cyan-mint), var(--green))',
+                            boxShadow: '0 0 10px rgba(77, 208, 225, 0.5)'
+                          }}
+                        />
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -83,8 +124,11 @@ export default function SkillsSection() {
         {/* 추가 기술 스택 */}
         <AnimatedSection animationType="fade-in-up" delay="400">
           <div className="mt-16 text-center">
-            <p className="text-lg" style={{ color: 'var(--slate)' }}>
-              계속해서 새로운 기술을 배우고 성장하고 있습니다
+            <p className="text-xl" style={{ 
+              color: 'var(--slate)',
+              textShadow: '0 0 20px rgba(77, 208, 225, 0.1)'
+            }}>
+              계속해서 새로운 기술을 배우고 성장하고 있습니다 ✨
             </p>
           </div>
         </AnimatedSection>

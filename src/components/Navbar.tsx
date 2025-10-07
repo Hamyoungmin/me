@@ -27,17 +27,20 @@ export default function Navbar() {
     { id: 'about', label: 'About', number: '01' },
     { id: 'projects', label: 'Projects', number: '02' },
     { id: 'skills', label: 'Skills', number: '03' },
-    { id: 'contact', label: 'Contact', number: '04' },
+    { id: 'faq', label: 'FAQ', number: '04' },
+    { id: 'contact', label: 'Contact', number: '05' },
   ];
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'backdrop-blur-md shadow-lg' 
+        ? 'backdrop-blur-xl' 
         : ''
     }`}
     style={{ 
-      background: isScrolled ? 'var(--navy-shadow)' : 'transparent'
+      background: isScrolled ? 'rgba(10, 25, 47, 0.85)' : 'transparent',
+      borderBottom: isScrolled ? '1px solid rgba(77, 208, 225, 0.1)' : 'none',
+      boxShadow: isScrolled ? '0 8px 32px rgba(0, 0, 0, 0.2)' : 'none'
     }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-24">
@@ -67,16 +70,22 @@ export default function Navbar() {
             ))}
             <a 
               href="#contact" 
-              className="border px-5 py-3 rounded font-mono text-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="px-5 py-3 rounded-xl font-mono text-sm transition-all duration-300 hover:-translate-y-1 backdrop-blur-sm"
               style={{ 
-                borderColor: 'var(--cyan-mint)', 
+                background: 'linear-gradient(135deg, rgba(77, 208, 225, 0.1), rgba(100, 255, 218, 0.1))',
+                border: '2px solid rgba(77, 208, 225, 0.3)',
                 color: 'var(--cyan-mint)',
+                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.1)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'var(--cyan-mint-tint)';
+                e.currentTarget.style.background = 'linear-gradient(135deg, rgba(77, 208, 225, 0.2), rgba(100, 255, 218, 0.2))';
+                e.currentTarget.style.borderColor = 'var(--cyan-mint)';
+                e.currentTarget.style.boxShadow = '0 0 20px rgba(77, 208, 225, 0.4)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.background = 'linear-gradient(135deg, rgba(77, 208, 225, 0.1), rgba(100, 255, 218, 0.1))';
+                e.currentTarget.style.borderColor = 'rgba(77, 208, 225, 0.3)';
+                e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.1)';
               }}
             >
               Resume

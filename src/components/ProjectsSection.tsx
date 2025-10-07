@@ -36,45 +36,45 @@ const projects = [
   },
   {
     id: 3,
-    name: "예시 프로젝트 3",
-    description: "세 번째 프로젝트에 대한 설명입니다.",
+    name: "봉평면옥",
+    description: "정통 메밀의 깊은 향과 전통의 맛이 살아있는 메밀면 전문점 웹사이트입니다.",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     role: "풀스택 개발자",
-    problemSolved: "해결한 문제 설명",
-    whatLearned: "배운 점",
+    problemSolved: "전통 음식점 브랜딩 및 온라인 홍보 플랫폼 구축",
+    whatLearned: "음식점 웹사이트 디자인 및 사용자 경험 최적화",
     links: {
       github: "https://github.com/Hamyoungmin",
-      demo: "https://project3-demo.com"
+      demo: "https://bongpyeonmteonok2.vercel.app/"
     },
-    image: "/placeholder-project.jpg"
+    image: "/스크린샷 2025-10-07 180211.png"
   },
   {
     id: 4,
-    name: "예시 프로젝트 4",
-    description: "네 번째 프로젝트에 대한 설명입니다.",
+    name: "FiniWatch",
+    description: "FiniWatch와 함께 스트리밍의 새로운 경험을. 전 세계 최고의 영화와 시리즈를 무제한으로 만나보세요.",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     role: "풀스택 개발자",
-    problemSolved: "해결한 문제 설명",
-    whatLearned: "배운 점",
+    problemSolved: "스트리밍 플랫폼 UI/UX 구축 및 콘텐츠 관리 시스템",
+    whatLearned: "대용량 미디어 콘텐츠 처리 및 반응형 웹 디자인",
     links: {
       github: "https://github.com/Hamyoungmin",
-      demo: "https://project4-demo.com"
+      demo: "https://netflixz-pi.vercel.app/"
     },
-    image: "/placeholder-project.jpg"
+    image: "/스크린샷 2025-10-07 182347.png"
   },
   {
     id: 5,
-    name: "예시 프로젝트 5",
-    description: "다섯 번째 프로젝트에 대한 설명입니다.",
+    name: "스타점 마케팅",
+    description: "글로벌 마케팅 리더십을 구축하는 스타점 마케팅 그룹에서 혁신적인 마케팅 전문가를 도와드립니다. (마케팅 테스트용 서버)",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     role: "풀스택 개발자",
-    problemSolved: "해결한 문제 설명",
-    whatLearned: "배운 점",
+    problemSolved: "마케팅 서비스 플랫폼 구축 및 테스트 환경 제공",
+    whatLearned: "마케팅 도구 개발 및 A/B 테스팅 시스템 구축",
     links: {
       github: "https://github.com/Hamyoungmin",
-      demo: "https://project5-demo.com"
+      demo: "https://proje-orcin.vercel.app/"
     },
-    image: "/placeholder-project.jpg"
+    image: "/스크린샷 2025-10-07 183022.png"
   },
   {
     id: 6,
@@ -97,14 +97,30 @@ export default function ProjectsSection() {
   const displayedProjects = showAll ? projects : projects.slice(0, 2);
   return (
     <section id="projects" className="py-20 lg:py-32 relative px-6 lg:px-24">
-      <div className="max-w-6xl mx-auto">
+      {/* 배경 그라데이션 */}
+      <div className="absolute inset-0 opacity-20">
+        <div 
+          className="absolute top-1/4 right-1/4 w-[500px] h-[500px] rounded-full blur-3xl"
+          style={{
+            background: 'radial-gradient(circle, rgba(77, 208, 225, 0.3) 0%, transparent 70%)',
+          }}
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <AnimatedSection animationType="fade-in-up">
           <div className="flex items-center gap-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-mono whitespace-nowrap" 
-                style={{ color: 'var(--white)' }}>
+                style={{ 
+                  color: 'var(--white)',
+                  textShadow: '0 0 20px rgba(77, 208, 225, 0.3)'
+                }}>
               <span style={{ color: 'var(--cyan-mint)' }}>02.</span> 프로젝트
             </h2>
-            <div className="h-[1px] w-full max-w-xs" style={{ background: 'var(--lightest-navy)' }}></div>
+            <div className="h-[2px] w-full max-w-xs rounded-full" 
+                 style={{ 
+                   background: 'linear-gradient(90deg, var(--cyan-mint), transparent)'
+                 }}></div>
           </div>
         </AnimatedSection>
 
@@ -122,7 +138,12 @@ export default function ProjectsSection() {
                   <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--white)' }}>
                     {project.name}
                   </h3>
-                  <div className="rounded p-6 mb-4" style={{ background: 'var(--light-navy)' }}>
+                  <div className="rounded-2xl p-6 mb-4 backdrop-blur-md" 
+                       style={{ 
+                         background: 'rgba(17, 34, 64, 0.4)',
+                         border: '1px solid rgba(77, 208, 225, 0.1)',
+                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)'
+                       }}>
                     {project.links.demo !== 'https://project-demo.com' && project.links.demo !== 'https://project2-demo.com' && (
                       <a 
                         href={project.links.demo} 
@@ -170,18 +191,16 @@ export default function ProjectsSection() {
                 {/* 프로젝트 이미지 (배경) */}
                 <div className={`col-span-12 lg:col-span-5 ${index % 2 === 0 ? 'lg:col-start-8' : 'lg:col-start-1 row-start-1'}`}>
                   <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="relative group block">
-                    <div className="rounded overflow-hidden">
+                    <div className="rounded-2xl overflow-hidden transition-all duration-300">
                       <div className="aspect-video relative" style={{ background: 'var(--light-navy)' }}>
                         {project.image && project.image !== '/placeholder-project.jpg' ? (
-                          <>
-                            <Image
-                              src={project.image}
-                              alt={project.name}
-                              fill
-                              className="object-cover transition-all duration-300 group-hover:opacity-80"
-                              sizes="(max-width: 768px) 100vw, 50vw"
-                            />
-                          </>
+                          <Image
+                            src={project.image}
+                            alt={project.name}
+                            fill
+                            className="object-cover transition-all duration-300"
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                          />
                         ) : (
                           <>
                             <div className="absolute inset-0 flex items-center justify-center text-6xl font-bold" 
@@ -203,17 +222,22 @@ export default function ProjectsSection() {
           <div className="text-center mt-16">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 px-8 py-4 font-mono text-sm rounded border transition-all duration-200 hover:-translate-y-1"
+              className="inline-flex items-center gap-2 px-8 py-4 font-mono text-sm rounded-2xl transition-all duration-300 hover:-translate-y-2 backdrop-blur-sm"
               style={{ 
+                background: 'linear-gradient(135deg, rgba(77, 208, 225, 0.1), rgba(100, 255, 218, 0.1))',
+                border: '2px solid rgba(77, 208, 225, 0.3)',
                 color: 'var(--cyan-mint)',
-                borderColor: 'var(--cyan-mint)',
-                background: 'transparent'
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(100, 255, 218, 0.1)';
+                e.currentTarget.style.background = 'linear-gradient(135deg, rgba(77, 208, 225, 0.2), rgba(100, 255, 218, 0.2))';
+                e.currentTarget.style.borderColor = 'var(--cyan-mint)';
+                e.currentTarget.style.boxShadow = '0 0 30px rgba(77, 208, 225, 0.4)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.background = 'linear-gradient(135deg, rgba(77, 208, 225, 0.1), rgba(100, 255, 218, 0.1))';
+                e.currentTarget.style.borderColor = 'rgba(77, 208, 225, 0.3)';
+                e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
               }}
             >
               {showAll ? '접기' : '+ 더보기'}

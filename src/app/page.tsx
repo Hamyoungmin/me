@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import AboutSection from '@/components/AboutSection';
 import SkillsSection from '@/components/SkillsSection';
+import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 
 // BootScreen을 클라이언트에서만 렌더링하도록 dynamic import 사용
@@ -21,13 +22,30 @@ const BootScreen = dynamic(() => import('@/components/BootScreen'), {
 
 export default function Home() {
   const [isBootComplete, setIsBootComplete] = useState(false);
+  const [showBootScreen, setShowBootScreen] = useState(false);
+
+  useEffect(() => {
+    // sessionStorage에서 부트스크린 완료 여부 확인
+    const bootShown = sessionStorage.getItem('bootScreenShown');
+    
+    if (bootShown === 'true') {
+      // 이미 부트스크린을 본 경우 바로 메인 페이지 표시
+      setIsBootComplete(true);
+      setShowBootScreen(false);
+    } else {
+      // 처음 방문한 경우 부트스크린 표시
+      setShowBootScreen(true);
+    }
+  }, []);
 
   const handleBootComplete = () => {
+    // 부트스크린 완료를 sessionStorage에 저장
+    sessionStorage.setItem('bootScreenShown', 'true');
     setIsBootComplete(true);
   };
 
-  // 부팅이 완료되지 않았다면 부팅 스크린 표시
-  if (!isBootComplete) {
+  // 부트스크린을 보여줘야 하고 아직 완료되지 않은 경우
+  if (showBootScreen && !isBootComplete) {
     return <BootScreen onBootComplete={handleBootComplete} />;
   }
 
@@ -78,6 +96,7 @@ export default function Home() {
             <AboutSection />
             <ProjectsSection />
             <SkillsSection />
+            <FAQSection />
             <ContactSection />
           </main>
           
