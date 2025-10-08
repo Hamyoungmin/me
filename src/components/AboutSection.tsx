@@ -80,13 +80,13 @@ export default function AboutSection() {
                      border: '2px solid rgba(77, 208, 225, 0.3)'
                    }}>
                 <div className="relative">
-                  <Image
-                    src="/1.jpg"
-                    alt="자바침 프로필 사진"
-                    width={300}
-                    height={300}
-                    className="w-full h-auto transition-all duration-300"
-                  />
+                      <Image
+                        src="/one1.jpg"
+                        alt="자바침 프로필 사진"
+                        width={300}
+                        height={300}
+                        className="w-full h-auto transition-all duration-300"
+                      />
                   <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               </div>
