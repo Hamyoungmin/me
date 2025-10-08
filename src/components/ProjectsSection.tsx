@@ -18,7 +18,7 @@ const projects = [
       github: "https://github.com/Hamyoungmin",
       demo: "https://golf-wheat.vercel.app"
     },
-    image: "/two2.png"
+    image: "/metwo.png"
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const projects = [
       github: "https://github.com/Hamyoungmin",
       demo: "https://momci.vercel.app"
     },
-    image: "/thr3.png"
+    image: "/methr.png"
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const projects = [
       github: "https://github.com/Hamyoungmin",
       demo: "https://bongpyeonmteonok2.vercel.app/"
     },
-    image: "/for4.png"
+    image: "/mefor.png"
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const projects = [
       github: "https://github.com/Hamyoungmin",
       demo: "https://netflixz-pi.vercel.app/"
     },
-    image: "/fv5.png"
+    image: "/mefiv.png"
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ const projects = [
       github: "https://github.com/Hamyoungmin",
       demo: "https://proje-orcin.vercel.app/"
     },
-    image: "/six6.png"
+    image: "/mesix.png"
   },
   {
     id: 6,
