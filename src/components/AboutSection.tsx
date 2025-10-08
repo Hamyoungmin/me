@@ -81,7 +81,7 @@ export default function AboutSection() {
                    }}>
                 <div className="relative">
                   <Image
-                    src="/증명사진.jpg"
+                    src="/1.jpg"
                     alt="자바침 프로필 사진"
                     width={300}
                     height={300}

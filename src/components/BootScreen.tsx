@@ -33,7 +33,10 @@ export default function BootScreen({ onBootComplete }: BootScreenProps) {
   }, [onBootComplete]);
 
   return (
-    <div className="fixed inset-0 bg-black z-50 flex items-center justify-center overflow-hidden">
+    <div 
+      className="fixed inset-0 bg-black z-50 flex items-center justify-center overflow-hidden cursor-pointer"
+      onClick={onBootComplete}
+    >
       <video
         ref={videoRef}
         className="w-full h-full object-cover"
