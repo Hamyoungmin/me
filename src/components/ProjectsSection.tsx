@@ -23,16 +23,16 @@ const projects = [
   {
     id: 2,
     name: "모든별 키즈",
-    description: "우리 아이의 빛나는 잠재력, 최고의 전문가가 함께 찾아요. 아동 발달 전문가 매칭 플랫폼입니다.",
+    description: "당신의 일상을 더욱 특별하게 만들어줄 최고의 제품을 만나보세요.<br />품질과 디자인의 완벽한 조화를 경험할 수 있는 커머스/쇼핑몰입니다.",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     role: "풀스택 개발자",
     problemSolved: "아동 발달 전문가 매칭 플랫폼 구축",
     whatLearned: "아동 발달 전문가 매칭 시스템 구축 및 최적화",
     links: {
       github: "https://github.com/Hamyoungmin",
-      demo: "https://momci.vercel.app"
+      demo: "https://me122.vercel.app"
     },
-    image: "/methr.png"
+    image: "/methree1.png"
   },
   {
     id: 3,
@@ -157,9 +157,7 @@ export default function ProjectsSection() {
                         🔗 {project.links.demo.replace('https://', '')}
                       </a>
                     )}
-                    <p className="text-base" style={{ color: 'var(--slate)' }}>
-                      {project.description}
-                    </p>
+                    <p className="text-base" style={{ color: 'var(--slate)' }} dangerouslySetInnerHTML={{ __html: project.description }} />
                   </div>
                   <ul className={`flex flex-wrap gap-4 font-mono text-xs mb-4 ${index % 2 === 0 ? 'justify-start' : 'lg:justify-end'}`}>
                     {project.techStack.map((tech, i) => (

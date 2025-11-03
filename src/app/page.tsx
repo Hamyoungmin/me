@@ -104,13 +104,13 @@ export default function Home() {
           <footer className="py-8" style={{ color: 'var(--slate)' }}>
             <div className="max-w-6xl mx-auto px-6 text-center">
               <div className="mb-4">
-                <h3 className="text-2xl font-bold mb-2" style={{ color: 'var(--lightest-slate)' }}>자바침</h3>
-                <p style={{ color: 'var(--slate)' }}>바이브코딩으로 뭐든 다 만들어드립니다</p>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: 'var(--lightest-slate)' }}>(주)리스트몰</h3>
+                <p style={{ color: 'var(--slate)' }}>(주)리스트몰입니다</p>
               </div>
               
               <div className="border-t pt-4" style={{ borderColor: 'var(--lightest-navy)' }}>
                 <p className="text-sm font-mono" style={{ color: 'var(--slate)' }}>
-                  © 2024 자바침. 빠르고 정확하게 만들어드리고 있으니 안심해주세요!
+                  © 2024 (주)리스트몰. All rights reserved.
                 </p>
               </div>
             </div>

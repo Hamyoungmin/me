@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "자바침 | 바이브코딩으로 뭐든 다 만들어드립니다",
-  description: "바이브코딩으로 원하는 것을 빠르고 정확하게 만들어드리는 자바침의 포트폴리오입니다.",
+  title: "(주)리스트몰",
+  description: "(주)리스트몰입니다.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
