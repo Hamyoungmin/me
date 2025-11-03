@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "(주)리스트몰",
-  description: "(주)리스트몰입니다.",
+  title: "개인홈페이지",
+  description: "개인홈페이지입니다.",
 };
 
 export default function RootLayout({
