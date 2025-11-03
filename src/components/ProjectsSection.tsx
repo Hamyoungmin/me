@@ -22,7 +22,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "모든별 키즈",
+    name: "(주)리스트몰",
     description: "당신의 일상을 더욱 특별하게 만들어줄 최고의 제품을 만나보세요.<br />품질과 디자인의 완벽한 조화를 경험할 수 있는 커머스/쇼핑몰입니다.",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     role: "풀스택 개발자",
