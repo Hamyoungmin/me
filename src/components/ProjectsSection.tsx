@@ -78,17 +78,17 @@ const projects = [
   },
   {
     id: 6,
-    name: "예시 프로젝트 6",
-    description: "여섯 번째 프로젝트에 대한 설명입니다.",
-    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    name: "아쿠아리움",
+    description: "육지와 바다, 두 세계가 만난 공간을 디지털로 구현한 아쿠아리움 프로젝트입니다.<br />Next.js와 Supabase를 활용하여 실시간 데이터 관리와 부드러운 사용자 경험을 제공하며, 육지와 바다의 조화를 시각적으로 표현한 독창적인 UX/UI 브랜딩을 선보입니다.",
+    techStack: ["Next.js", "Supabase", "React", "TypeScript", "Tailwind CSS"],
     role: "풀스택 개발자",
-    problemSolved: "해결한 문제 설명",
-    whatLearned: "배운 점",
+    problemSolved: "육지와 바다 테마의 통합된 브랜딩 및 실시간 데이터 기반 아쿠아리움 플랫폼 구축",
+    whatLearned: "Next.js와 Supabase 연동을 통한 실시간 데이터 관리 및 자연 테마를 활용한 브랜딩 디자인",
     links: {
       github: "https://github.com/Hamyoungmin",
-      demo: "https://project6-demo.com"
+      demo: "https://curator-ten.vercel.app"
     },
-    image: "/placeholder-project.jpg"
+    image: "/mesixx.png"
   }
 ];
 
@@ -129,7 +129,7 @@ export default function ProjectsSection() {
             <AnimatedSection 
               key={project.id} 
               animationType="fade-in-up"
-              delay={index < 2 ? (index * 200).toString() as "100" | "200" | "300" | "400" | "500" : undefined}
+              delay={index < 2 ? (index === 0 ? '100' : index === 1 ? '200' : undefined) : undefined}
             >
               <div className={`grid grid-cols-12 gap-4 items-center ${index % 2 === 0 ? '' : 'direction-rtl'}`}>
                 {/* 프로젝트 내용 */}
