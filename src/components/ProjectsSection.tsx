@@ -89,6 +89,48 @@ const projects = [
       demo: "https://curator-ten.vercel.app"
     },
     image: "/mesixx.png"
+  },
+  {
+    id: 7,
+    name: "셀룰스킨",
+    description: "온·오프라인 창업의 새로운 패러다임을 제시하는 다이어트 전문 브랜드 사이트입니다.<br />체계적인 비즈니스 플랜과 검증된 다이어트 시스템을 통해 고객의 성공적인 체형 관리를 지원하며, 온라인과 오프라인을 아우르는 통합 솔루션을 제공합니다.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "풀스택 개발자",
+    problemSolved: "온·오프라인 통합 다이어트 플랫폼 구축 및 비즈니스 확장 지원",
+    whatLearned: "헬스케어 브랜딩 및 창업 지원 시스템 개발",
+    links: {
+      github: "https://github.com/Hamyoungmin",
+      demo: "https://1212-virid.vercel.app"
+    },
+    image: "/meseven1.png"
+  },
+  {
+    id: 8,
+    name: "프로젝트 8",
+    description: "여기에 프로젝트 설명을 입력하세요.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "풀스택 개발자",
+    problemSolved: "해결한 문제를 설명하세요",
+    whatLearned: "배운 점을 설명하세요",
+    links: {
+      github: "https://github.com/Hamyoungmin",
+      demo: "https://project-demo.com"
+    },
+    image: "/placeholder-project.jpg"
+  },
+  {
+    id: 9,
+    name: "프로젝트 9",
+    description: "여기에 프로젝트 설명을 입력하세요.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "풀스택 개발자",
+    problemSolved: "해결한 문제를 설명하세요",
+    whatLearned: "배운 점을 설명하세요",
+    links: {
+      github: "https://github.com/Hamyoungmin",
+      demo: "https://project-demo.com"
+    },
+    image: "/placeholder-project.jpg"
   }
 ];
 
