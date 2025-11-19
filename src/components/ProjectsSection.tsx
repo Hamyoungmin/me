@@ -106,17 +106,17 @@ const projects = [
   },
   {
     id: 8,
-    name: "프로젝트 8",
-    description: "여기에 프로젝트 설명을 입력하세요.",
+    name: "넷북몰",
+    description: "노트북, 맥북 등 다양한 전자기기를 저렴한 가격으로<br />만날 수 있는 도매 전문 이커머스 플랫폼입니다.<br />합리적인 가격으로 새 제품을 구매할 수 있도록 도매 유통 구조를 활용하여,<br />고객에게 최고의 가성비를 제공하는 전자제품 쇼핑몰입니다.",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     role: "풀스택 개발자",
-    problemSolved: "해결한 문제를 설명하세요",
-    whatLearned: "배운 점을 설명하세요",
+    problemSolved: "전자기기 도매 유통 플랫폼 구축 및 가격 경쟁력 확보",
+    whatLearned: "이커머스 도매 시스템 개발 및 재고 관리 최적화",
     links: {
       github: "https://github.com/Hamyoungmin",
-      demo: "https://project-demo.com"
+      demo: "https://netbockmall.vercel.app"
     },
-    image: "/placeholder-project.jpg"
+    image: "/meeight.png"
   },
   {
     id: 9,
