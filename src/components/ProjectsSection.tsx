@@ -120,17 +120,17 @@ const projects = [
   },
   {
     id: 9,
-    name: "프로젝트 9",
-    description: "여기에 프로젝트 설명을 입력하세요.",
+    name: "오똘",
+    description: "제주도, 일본, 미국, 중국, 태국, 베트남 등 다양한 여행지를 한곳에서 만나보세요.<br />전문 여행사를 통한 체계적인 여행 상품으로, 합리적인 가격에 더욱 풍성한 일정을 경험할 수 있습니다.<br />특별한 추억을 만들어드리는 스마트한 여행 예약 플랫폼입니다.",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     role: "풀스택 개발자",
-    problemSolved: "해결한 문제를 설명하세요",
-    whatLearned: "배운 점을 설명하세요",
+    problemSolved: "다국가 여행 예약 플랫폼 구축 및 가격 경쟁력 확보",
+    whatLearned: "여행 예약 시스템 개발 및 다양한 여행지 통합 관리",
     links: {
       github: "https://github.com/Hamyoungmin",
-      demo: "https://project-demo.com"
+      demo: "https://zaza-2n63.vercel.app"
     },
-    image: "/placeholder-project.jpg"
+    image: "/menine.png"
   }
 ];
 
