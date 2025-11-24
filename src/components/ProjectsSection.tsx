@@ -131,6 +131,90 @@ const projects = [
       demo: "https://zaza-2n63.vercel.app"
     },
     image: "/menine.png"
+  },
+  {
+    id: 10,
+    name: "프로젝트 10",
+    description: "여기에 프로젝트 설명을 입력하세요.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "풀스택 개발자",
+    problemSolved: "해결한 문제를 설명하세요",
+    whatLearned: "배운 점을 설명하세요",
+    links: {
+      github: "https://github.com/Hamyoungmin",
+      demo: "https://project-demo.com"
+    },
+    image: "/placeholder-project.jpg"
+  },
+  {
+    id: 11,
+    name: "프로젝트 11",
+    description: "여기에 프로젝트 설명을 입력하세요.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "풀스택 개발자",
+    problemSolved: "해결한 문제를 설명하세요",
+    whatLearned: "배운 점을 설명하세요",
+    links: {
+      github: "https://github.com/Hamyoungmin",
+      demo: "https://project-demo.com"
+    },
+    image: "/placeholder-project.jpg"
+  },
+  {
+    id: 12,
+    name: "프로젝트 12",
+    description: "여기에 프로젝트 설명을 입력하세요.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "풀스택 개발자",
+    problemSolved: "해결한 문제를 설명하세요",
+    whatLearned: "배운 점을 설명하세요",
+    links: {
+      github: "https://github.com/Hamyoungmin",
+      demo: "https://project-demo.com"
+    },
+    image: "/placeholder-project.jpg"
+  },
+  {
+    id: 13,
+    name: "프로젝트 13",
+    description: "여기에 프로젝트 설명을 입력하세요.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "풀스택 개발자",
+    problemSolved: "해결한 문제를 설명하세요",
+    whatLearned: "배운 점을 설명하세요",
+    links: {
+      github: "https://github.com/Hamyoungmin",
+      demo: "https://project-demo.com"
+    },
+    image: "/placeholder-project.jpg"
+  },
+  {
+    id: 14,
+    name: "프로젝트 14",
+    description: "여기에 프로젝트 설명을 입력하세요.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "풀스택 개발자",
+    problemSolved: "해결한 문제를 설명하세요",
+    whatLearned: "배운 점을 설명하세요",
+    links: {
+      github: "https://github.com/Hamyoungmin",
+      demo: "https://project-demo.com"
+    },
+    image: "/placeholder-project.jpg"
+  },
+  {
+    id: 15,
+    name: "프로젝트 15",
+    description: "여기에 프로젝트 설명을 입력하세요.",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "풀스택 개발자",
+    problemSolved: "해결한 문제를 설명하세요",
+    whatLearned: "배운 점을 설명하세요",
+    links: {
+      github: "https://github.com/Hamyoungmin",
+      demo: "https://project-demo.com"
+    },
+    image: "/placeholder-project.jpg"
   }
 ];
 

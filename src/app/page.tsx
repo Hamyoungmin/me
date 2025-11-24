@@ -101,16 +101,33 @@ export default function Home() {
           </main>
           
           {/* 푸터 */}
-          <footer className="py-8" style={{ color: 'var(--slate)' }}>
-            <div className="max-w-6xl mx-auto px-6 text-center">
-              <div className="mb-4">
-                <h3 className="text-2xl font-bold mb-2" style={{ color: 'var(--lightest-slate)' }}>개인홈페이지</h3>
-                <p style={{ color: 'var(--slate)' }}>개인홈페이지입니다</p>
+          <footer className="py-8 px-6" style={{ color: 'var(--slate)', background: 'rgba(17, 34, 64, 0.3)' }}>
+            <div className="max-w-7xl mx-auto">
+              <div className="border-t border-b py-4" style={{ borderColor: 'var(--lightest-navy)' }}>
+                <div className="text-center space-y-2">
+                  {/* 첫 번째 줄: 회사명, 주소, 사업자번호 */}
+                  <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs md:text-sm font-mono" style={{ color: 'var(--slate)' }}>
+                    <span>회사: (주)자바침</span>
+                    <span className="hidden md:inline">|</span>
+                    <span>주소: 서울특별시 관악구 문성로 206-3</span>
+                    <span className="hidden md:inline">|</span>
+                    <span>사업자번호: 614-46-01257</span>
+                  </div>
+                  
+                  {/* 두 번째 줄: 전화번호, 이메일, 운영시간 */}
+                  <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs md:text-sm font-mono" style={{ color: 'var(--slate)' }}>
+                    <span>전화: 010-7334-2674</span>
+                    <span className="hidden md:inline">|</span>
+                    <span>이메일: dudals7334@naver.com</span>
+                    <span className="hidden md:inline">|</span>
+                    <span>운영시간: 24시간 연중무휴</span>
+                  </div>
+                </div>
               </div>
               
-              <div className="border-t pt-4" style={{ borderColor: 'var(--lightest-navy)' }}>
-                <p className="text-sm font-mono" style={{ color: 'var(--slate)' }}>
-                  © 2024 개인홈페이지. All rights reserved.
+              <div className="text-center pt-4">
+                <p className="text-xs md:text-sm font-mono" style={{ color: 'var(--slate)' }}>
+                  2025-10-23 (주)자바침. All rights reserved.
                 </p>
               </div>
             </div>
