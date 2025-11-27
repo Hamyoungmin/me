@@ -134,17 +134,17 @@ const projects = [
   },
   {
     id: 10,
-    name: "프로젝트 10",
-    description: "여기에 프로젝트 설명을 입력하세요.",
+    name: "베스킨라빈스",
+    description: "아이스크림 메인 베스킨라빈스를 기반으로 만든 웹사이트입니다.<br />실제 베스킨라빈스와 흡사하면서도 색다른 느낌의 홈페이지를 구현했습니다.<br />브랜드의 정체성을 유지하면서도 독창적인 UX/UI를 선보입니다.",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     role: "풀스택 개발자",
-    problemSolved: "해결한 문제를 설명하세요",
-    whatLearned: "배운 점을 설명하세요",
+    problemSolved: "유명 아이스크림 브랜드의 정체성을 유지하면서 독창적인 디자인 구현",
+    whatLearned: "브랜드 아이덴티티를 존중하면서도 차별화된 사용자 경험 제공",
     links: {
       github: "https://github.com/Hamyoungmin",
-      demo: "https://project-demo.com"
+      demo: "https://a-iapi.vercel.app"
     },
-    image: "/placeholder-project.jpg"
+    image: "/meten.png"
   },
   {
     id: 11,
